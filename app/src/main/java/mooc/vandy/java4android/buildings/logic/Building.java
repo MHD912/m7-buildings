@@ -7,8 +7,7 @@ import java.util.Locale;
 /**
  * This is the Building class file.
  */
-public class Building
-{
+public class Building {
 
     // TODO - Put your code here.
     private int mLength;
@@ -16,68 +15,56 @@ public class Building
     private int mLotLength;
     private int mLotWidth;
 
-    public Building(int length, int width, int lotLength, int lotWidth)
-    {
+    public Building(int length, int width, int lotLength, int lotWidth) {
         this.mLength = length;
         this.mWidth = width;
         this.mLotLength = lotLength;
         this.mLotWidth = lotWidth;
     }
 
-    public int getLength()
-    {
+    public int getLength() {
         return mLength;
     }
 
-    public int getWidth()
-    {
+    public int getWidth() {
         return mWidth;
     }
 
-    public int getLotLength()
-    {
+    public int getLotLength() {
         return mLotLength;
     }
 
-    public int getLotWidth()
-    {
+    public int getLotWidth() {
         return mLotWidth;
     }
 
-    public void setLength(int length)
-    {
+    public void setLength(int length) {
         this.mLength = length;
     }
 
-    public void setWidth(int width)
-    {
+    public void setWidth(int width) {
         this.mWidth = width;
     }
 
-    public void setLotLength(int lotLength)
-    {
+    public void setLotLength(int lotLength) {
         this.mLotLength = lotLength;
     }
 
-    public void setLotWidth(int lotWidth)
-    {
+    public void setLotWidth(int lotWidth) {
         this.mLotWidth = lotWidth;
     }
 
-    public int calcBuildingArea()
-    {
-        return 0;
+    public int calcBuildingArea() {
+        return mLength * mWidth;
     }
 
-    public int calcLotArea()
-    {
-        return 0;
+    public int calcLotArea() {
+        return mLotLength * mLotWidth;
     }
 
     @NonNull
     @Override
-    public String toString()
-    {
+    public String toString() {
         return String.format(Locale.getDefault(), "a %dx%d building", this.getLength(), this.getWidth());
     }
 }

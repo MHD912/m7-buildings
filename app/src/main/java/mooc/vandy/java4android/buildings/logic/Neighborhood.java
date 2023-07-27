@@ -19,10 +19,18 @@ public final class Neighborhood {
     }
     public static void print(Building[] buildings, String header, OutputInterface out)
     {
-
+        out.println(header);
+        out.println("----------");
+        for (Building building: buildings) {
+            out.println(building);
+        }
     }
     public static int calcArea(Building[] buildings)
     {
-        return 0;
+        int total = 0;
+        for (Building building: buildings) {
+            total += building.calcLotArea();
+        }
+        return total;
     }
 }
