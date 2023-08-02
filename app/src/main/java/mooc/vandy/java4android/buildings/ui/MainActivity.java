@@ -19,8 +19,7 @@ public class MainActivity
     /**
      * String for LOGGING
      */
-    private final static String LOG_TAG =
-        MainActivity.class.getCanonicalName();
+    private final static String LOG_TAG = MainActivity.class.getCanonicalName();
 
     /**
      * Logic Instance.
